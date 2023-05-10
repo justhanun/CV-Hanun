@@ -17,6 +17,8 @@
 		8DB5EFBE2A0B487E001560C1 /* CurriculumVitaeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFBC2A0B487E001560C1 /* CurriculumVitaeViewController.xib */; };
 		8DB5EFC02A0B48D1001560C1 /* ContacInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5EFBF2A0B48D1001560C1 /* ContacInformationView.swift */; };
 		8DB5EFC22A0B48E2001560C1 /* ContacInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFC12A0B48E2001560C1 /* ContacInformationView.xib */; };
+		8DB5EFC42A0B4B5F001560C1 /* WorkExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5EFC32A0B4B5F001560C1 /* WorkExperienceView.swift */; };
+		8DB5EFC62A0B4B72001560C1 /* WorkExperienceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFC52A0B4B72001560C1 /* WorkExperienceView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		8DB5EFBC2A0B487E001560C1 /* CurriculumVitaeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurriculumVitaeViewController.xib; sourceTree = "<group>"; };
 		8DB5EFBF2A0B48D1001560C1 /* ContacInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacInformationView.swift; sourceTree = "<group>"; };
 		8DB5EFC12A0B48E2001560C1 /* ContacInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContacInformationView.xib; sourceTree = "<group>"; };
+		8DB5EFC32A0B4B5F001560C1 /* WorkExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceView.swift; sourceTree = "<group>"; };
+		8DB5EFC52A0B4B72001560C1 /* WorkExperienceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkExperienceView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +75,12 @@
 				8DB5EFB72A0B46F6001560C1 /* HomeViewController.swift */,
 				8DB5EFBB2A0B487D001560C1 /* CurriculumVitaeViewController.swift */,
 				8DB5EFBF2A0B48D1001560C1 /* ContacInformationView.swift */,
+				8DB5EFC52A0B4B72001560C1 /* WorkExperienceView.xib */,
 				8DB5EFC12A0B48E2001560C1 /* ContacInformationView.xib */,
 				8DB5EFBC2A0B487E001560C1 /* CurriculumVitaeViewController.xib */,
 				8DB5EFB82A0B46F6001560C1 /* HomeViewController.xib */,
 				8DB5EFA72A0B435F001560C1 /* Assets.xcassets */,
+				8DB5EFC32A0B4B5F001560C1 /* WorkExperienceView.swift */,
 				8DB5EFA92A0B435F001560C1 /* CV_Hanun.entitlements */,
 				8DB5EFAA2A0B435F001560C1 /* Preview Content */,
 			);
@@ -148,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DB5EFAC2A0B435F001560C1 /* Preview Assets.xcassets in Resources */,
+				8DB5EFC62A0B4B72001560C1 /* WorkExperienceView.xib in Resources */,
 				8DB5EFA82A0B435F001560C1 /* Assets.xcassets in Resources */,
 				8DB5EFC22A0B48E2001560C1 /* ContacInformationView.xib in Resources */,
 				8DB5EFBA2A0B46F6001560C1 /* HomeViewController.xib in Resources */,
@@ -165,6 +172,7 @@
 				8DB5EFB42A0B4688001560C1 /* AppDelegate.swift in Sources */,
 				8DB5EFBD2A0B487E001560C1 /* CurriculumVitaeViewController.swift in Sources */,
 				8DB5EFC02A0B48D1001560C1 /* ContacInformationView.swift in Sources */,
+				8DB5EFC42A0B4B5F001560C1 /* WorkExperienceView.swift in Sources */,
 				8DB5EFB62A0B4697001560C1 /* SceneDelegate.swift in Sources */,
 				8DB5EFB92A0B46F6001560C1 /* HomeViewController.swift in Sources */,
 			);

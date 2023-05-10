@@ -8,8 +8,23 @@
 import UIKit
 
 class CurriculumVitaeViewController: UIViewController {
-
     @IBOutlet weak var containerContent: UIView!
+    @IBOutlet weak var contacInformationStackView: UIStackView!
+    @IBOutlet weak var workExperienceStackView: UIStackView!
+    
+    private lazy var contacInformationView: ContacInformationView = {
+        var view = ContacInformationView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    private lazy var workExperienceView: WorkExperienceView = {
+        var view = WorkExperienceView()
+        view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +35,19 @@ class CurriculumVitaeViewController: UIViewController {
         ]
         self.navigationController?.navigationBar.tintColor = hexStringToUIColor(hex: "#24314E")
         subViews()
+        configureButton()
     }
+
     
-    private lazy var contacInformationView: ContacInformationView = {
-        var view = ContacInformationView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private func configureButton() {
+        contacInformationStackView.isUserInteractionEnabled = true
+        let contacInformationStacGesture = UITapGestureRecognizer(target: self, action: #selector(openContacInformation))
+        contacInformationStackView.addGestureRecognizer(contacInformationStacGesture)
+        
+        workExperienceStackView.isUserInteractionEnabled = true
+        let workExperienceStackGesture = UITapGestureRecognizer(target: self, action: #selector(openWorkExperience))
+        workExperienceStackView.addGestureRecognizer(workExperienceStackGesture)
+    }
     
     private func subViews() {
         containerContent.addSubview(contacInformationView)
@@ -36,6 +57,24 @@ class CurriculumVitaeViewController: UIViewController {
             contacInformationView.trailingAnchor.constraint(equalTo: containerContent.trailingAnchor, constant: -16),
             contacInformationView.bottomAnchor.constraint(equalTo: containerContent.bottomAnchor, constant: 0),
         ])
+        
+        containerContent.addSubview(workExperienceView)
+        NSLayoutConstraint.activate([
+            workExperienceView.topAnchor.constraint(equalTo: containerContent.topAnchor),
+            workExperienceView.leadingAnchor.constraint(equalTo: containerContent.leadingAnchor, constant: 16),
+            workExperienceView.trailingAnchor.constraint(equalTo: containerContent.trailingAnchor, constant: -16),
+            workExperienceView.bottomAnchor.constraint(equalTo: containerContent.bottomAnchor, constant: 0),
+        ])
+    }
+    
+    @objc private func openWorkExperience() {
+        contacInformationView.isHidden = true
+        workExperienceView.isHidden = false
+    }
+    
+    @objc private func openContacInformation() {
+        contacInformationView.isHidden = false
+        workExperienceView.isHidden = true
     }
     
     func hexStringToUIColor (hex:String) -> UIColor {
