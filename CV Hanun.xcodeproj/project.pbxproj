@@ -50,6 +50,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D70FB002A0B635600335E74 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8DB5EFB32A0B4688001560C1 /* AppDelegate.swift */,
+				8DB5EFB52A0B4697001560C1 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		8D70FB012A0B635800335E74 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8DB5EFB72A0B46F6001560C1 /* HomeViewController.swift */,
+				8DB5EFB82A0B46F6001560C1 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8D70FB022A0B635B00335E74 /* CurriculumVitae */ = {
+			isa = PBXGroup;
+			children = (
+				8D70FB052A0B636200335E74 /* View */,
+				8DB5EFBB2A0B487D001560C1 /* CurriculumVitaeViewController.swift */,
+				8DB5EFBC2A0B487E001560C1 /* CurriculumVitaeViewController.xib */,
+			);
+			path = CurriculumVitae;
+			sourceTree = "<group>";
+		};
+		8D70FB032A0B635D00335E74 /* Work Experience */ = {
+			isa = PBXGroup;
+			children = (
+				8DB5EFC52A0B4B72001560C1 /* WorkExperienceView.xib */,
+				8DB5EFC32A0B4B5F001560C1 /* WorkExperienceView.swift */,
+			);
+			path = "Work Experience";
+			sourceTree = "<group>";
+		};
+		8D70FB042A0B635F00335E74 /* Contact Information */ = {
+			isa = PBXGroup;
+			children = (
+				8DB5EFBF2A0B48D1001560C1 /* ContacInformationView.swift */,
+				8DB5EFC12A0B48E2001560C1 /* ContacInformationView.xib */,
+			);
+			path = "Contact Information";
+			sourceTree = "<group>";
+		};
+		8D70FB052A0B636200335E74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D70FB042A0B635F00335E74 /* Contact Information */,
+				8D70FB032A0B635D00335E74 /* Work Experience */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D70FB062A0B63C400335E74 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				8D70FB022A0B635B00335E74 /* CurriculumVitae */,
+				8D70FB012A0B635800335E74 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		8DB5EF972A0B435C001560C1 = {
 			isa = PBXGroup;
 			children = (
@@ -69,18 +133,10 @@
 		8DB5EFA22A0B435C001560C1 /* CV Hanun */ = {
 			isa = PBXGroup;
 			children = (
+				8D70FB062A0B63C400335E74 /* Feature */,
+				8D70FB002A0B635600335E74 /* Delegate */,
 				8DB5EFB22A0B45B6001560C1 /* CV-Hanun-Info.plist */,
-				8DB5EFB32A0B4688001560C1 /* AppDelegate.swift */,
-				8DB5EFB52A0B4697001560C1 /* SceneDelegate.swift */,
-				8DB5EFB72A0B46F6001560C1 /* HomeViewController.swift */,
-				8DB5EFBB2A0B487D001560C1 /* CurriculumVitaeViewController.swift */,
-				8DB5EFBF2A0B48D1001560C1 /* ContacInformationView.swift */,
-				8DB5EFC52A0B4B72001560C1 /* WorkExperienceView.xib */,
-				8DB5EFC12A0B48E2001560C1 /* ContacInformationView.xib */,
-				8DB5EFBC2A0B487E001560C1 /* CurriculumVitaeViewController.xib */,
-				8DB5EFB82A0B46F6001560C1 /* HomeViewController.xib */,
 				8DB5EFA72A0B435F001560C1 /* Assets.xcassets */,
-				8DB5EFC32A0B4B5F001560C1 /* WorkExperienceView.swift */,
 				8DB5EFA92A0B435F001560C1 /* CV_Hanun.entitlements */,
 				8DB5EFAA2A0B435F001560C1 /* Preview Content */,
 			);
