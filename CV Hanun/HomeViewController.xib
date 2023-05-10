@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TokopediaDetailProduct" customModuleProvider="target">
+            <connections>
+                <outlet property="curriculumVitaeButton" destination="rPH-iY-pgT" id="Wcf-Bw-sCD"/>
+                <outlet property="portofolio1Button" destination="kX7-vR-TQb" id="Oiv-vW-bGi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get To Know Me" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci9-Cf-2E0">
+                    <rect key="frame" x="54" y="129" width="183" height="74"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZI1-aO-fxn">
+                    <rect key="frame" x="54" y="520" width="285" height="196"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPH-iY-pgT">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="54"/>
+                            <rect key="contentStretch" x="0.5" y="0.59999999999999998" width="1" height="1"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Curriculum Vitae" cornerStyle="large" buttonSize="large">
+                                <backgroundConfiguration key="background">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84466384698410613" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX7-vR-TQb">
+                            <rect key="frame" x="0.0" y="71" width="285" height="54"/>
+                            <rect key="contentStretch" x="0.5" y="0.59999999999999998" width="1" height="1"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Portofolio 1" cornerStyle="large" buttonSize="large">
+                                <backgroundConfiguration key="background">
+                                    <color key="backgroundColor" red="0.02414261193001491" green="0.14054128064141502" blue="0.28698305739569907" alpha="0.84466384698410613" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlI-rK-H93">
+                            <rect key="frame" x="0.0" y="142" width="285" height="54"/>
+                            <rect key="contentStretch" x="0.5" y="0.59999999999999998" width="1" height="1"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Portofolio 2" cornerStyle="large" buttonSize="large">
+                                <backgroundConfiguration key="background">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84466384699999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ci9-Cf-2E0" secondAttribute="trailing" constant="156" id="9WV-Ro-fJw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZI1-aO-fxn" secondAttribute="bottom" constant="102" id="Ixv-sp-ULq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZI1-aO-fxn" secondAttribute="trailing" constant="54" id="SxX-P2-Lz4"/>
+                <constraint firstItem="ci9-Cf-2E0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="54" id="Yhd-oz-Rhv"/>
+                <constraint firstItem="ZI1-aO-fxn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="54" id="gKf-3P-Yef"/>
+                <constraint firstItem="ci9-Cf-2E0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="plB-lH-kAt"/>
+            </constraints>
+            <point key="canvasLocation" x="38.931297709923662" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>
+

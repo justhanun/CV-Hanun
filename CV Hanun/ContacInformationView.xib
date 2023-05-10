@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContacInformationView" customModule="TokopediaDetailProduct" customModuleProvider="target">
+            <connections>
+                <outlet property="containerContac" destination="a0d-p5-9sx" id="ohc-g0-H0l"/>
+                <outlet property="linkedInButton" destination="JNp-PH-r7u" id="m3O-aQ-jAy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ContacInformationView" customModule="TokopediaDetailProduct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0AB-Uf-wXn">
+                    <rect key="frame" x="0.0" y="59" width="393" height="520"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePL-e5-180">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="0.00044524230180000002" green="0.074362225830000003" blue="0.1431952715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0d-p5-9sx">
+                            <rect key="frame" x="0.0" y="38" width="393" height="395"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UaC-pS-yJf">
+                                    <rect key="frame" x="16" y="16" width="361" height="363"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2023-05-07 at 8.17 3" translatesAutoresizingMaskIntoConstraints="NO" id="c5d-F9-pEf">
+                                            <rect key="frame" x="89" y="0.0" width="183" height="182"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="all-6J-CPe">
+                                            <rect key="frame" x="116.66666666666666" y="206" width="128" height="47.666666666666657"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlY-l8-Au3">
+                                                    <rect key="frame" x="43" y="0.0" width="42" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="justhanun@yahoo.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lew-qN-tJA">
+                                                    <rect key="frame" x="0.0" y="18" width="128" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+628179201103" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bi7-c0-cbk">
+                                                    <rect key="frame" x="18.333333333333336" y="33.333333333333314" width="91.333333333333314" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FyG-Fu-jGd">
+                                            <rect key="frame" x="44" y="277.66666666666669" width="273" height="85.333333333333314"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ihd-Hk-okS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 13" translatesAutoresizingMaskIntoConstraints="NO" id="dOG-QV-IMd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@justhanun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9r-hC-Hog">
+                                                            <rect key="frame" x="33.999999999999993" y="0.0" width="66.333333333333314" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="qTA-ZW-bAB">
+                                                    <rect key="frame" x="0.0" y="28.000000000000004" width="273" height="57.333333333333343"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing 2" translatesAutoresizingMaskIntoConstraints="NO" id="nwn-bv-NH8">
+                                                            <rect key="frame" x="0.0" y="19.666666666666629" width="15" height="18"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iou-uf-wtW">
+                                                            <rect key="frame" x="29" y="7.3333333333333144" width="244" height="43"/>
+                                                            <string key="text">Jl. Budhi 1 No.5 RT:02 RW:03 Kec. Cicendo
+Kel. Sukaraja Bandung
+40175</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.095405146241371558" blue="0.18001892719072177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="UaC-pS-yJf" firstAttribute="top" secondItem="a0d-p5-9sx" secondAttribute="top" constant="16" id="BKp-KE-Nhc"/>
+                                <constraint firstItem="UaC-pS-yJf" firstAttribute="leading" secondItem="a0d-p5-9sx" secondAttribute="leading" constant="16" id="jsh-oa-N1x"/>
+                                <constraint firstAttribute="trailing" secondItem="UaC-pS-yJf" secondAttribute="trailing" constant="16" id="kag-ts-j37"/>
+                                <constraint firstAttribute="bottom" secondItem="UaC-pS-yJf" secondAttribute="bottom" constant="16" id="tUN-C0-YpF"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQH-w0-ZXc">
+                            <rect key="frame" x="0.0" y="441" width="393" height="79"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNp-PH-r7u">
+                                    <rect key="frame" x="64" y="16" width="265" height="47"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Group 2" imagePlacement="trailing" title="Linkedin" imagePadding="16" buttonSize="medium">
+                                        <backgroundConfiguration key="background" strokeWidth="0.0">
+                                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        </backgroundConfiguration>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="JNp-PH-r7u" secondAttribute="trailing" constant="64" id="Fee-wP-6CP"/>
+                                <constraint firstItem="JNp-PH-r7u" firstAttribute="top" secondItem="NQH-w0-ZXc" secondAttribute="top" constant="16" id="VKR-Xm-gaj"/>
+                                <constraint firstAttribute="bottom" secondItem="JNp-PH-r7u" secondAttribute="bottom" constant="16" id="cPx-P5-c7g"/>
+                                <constraint firstItem="JNp-PH-r7u" firstAttribute="leading" secondItem="NQH-w0-ZXc" secondAttribute="leading" constant="64" id="kdz-iK-5sp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="0AB-Uf-wXn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="F5a-NM-Oyi"/>
+                <constraint firstItem="0AB-Uf-wXn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="a1I-J6-hbz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0AB-Uf-wXn" secondAttribute="trailing" id="n9Z-GF-4sp"/>
+            </constraints>
+            <point key="canvasLocation" x="43.511450381679388" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 2" width="25" height="25"/>
+        <image name="Rectangle 13" width="20" height="20"/>
+        <image name="WhatsApp Image 2023-05-07 at 8.17 3" width="183" height="182"/>
+        <image name="pngwing 2" width="15" height="18"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
+
