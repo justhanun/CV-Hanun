@@ -3,13 +3,15 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var portofolio1Button: UIButton!
+    
+    @IBOutlet weak var linkedInButton: UIButton!
     @IBOutlet weak var curriculumVitaeButton: UIButton!
+    @IBOutlet weak var gitHubButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureButton()
     }
     
@@ -25,7 +27,8 @@ class HomeViewController: UIViewController {
     
     func configureButton() {
         self.curriculumVitaeButton.addTarget(self, action: #selector(toCurriculumVitae), for: .touchUpInside)
-        self.portofolio1Button.addTarget(self, action: #selector(toportofolio1Button), for: .touchUpInside)
+        self.linkedInButton.addTarget(self, action: #selector(toLinkedInButton), for: .touchUpInside)
+        self.gitHubButton.addTarget(self, action: #selector(toGitHub), for: .touchUpInside)
     }
     
     @objc func toCurriculumVitae() {
@@ -33,9 +36,14 @@ class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(curriculumVitaeViewController, animated: true)
     }
     
-    @objc func toportofolio1Button() {
-        let portofolio1ButtonViewController = CurriculumVitaeViewController(nibName: "CurriculumVitaeViewController", bundle: nil)
-        self.navigationController?.pushViewController(portofolio1ButtonViewController, animated: true)
+    @objc func toLinkedInButton() {
+        guard let url = URL(string: "https://www.linkedin.com/in/justhanun") else { return }
+        UIApplication.shared.open(url)
+    }
+    
+    @objc func toGitHub() {
+        guard let url = URL(string: "https://github.com/justhanun?tab=repositories") else { return }
+        UIApplication.shared.open(url)
     }
 }
 

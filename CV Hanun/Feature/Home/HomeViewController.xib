@@ -8,10 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TokopediaDetailProduct" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CV_Hanun" customModuleProvider="target">
             <connections>
+                <outlet property="LinkedInButton" destination="kX7-vR-TQb" id="Oiv-vW-bGi"/>
                 <outlet property="curriculumVitaeButton" destination="rPH-iY-pgT" id="Wcf-Bw-sCD"/>
-                <outlet property="portofolio1Button" destination="kX7-vR-TQb" id="Oiv-vW-bGi"/>
+                <outlet property="gitHubButton" destination="qlI-rK-H93" id="Rk3-nz-aJI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,7 +47,7 @@
                             <rect key="contentStretch" x="0.5" y="0.59999999999999998" width="1" height="1"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Portofolio 1" cornerStyle="large" buttonSize="large">
+                            <buttonConfiguration key="configuration" style="plain" title="LinkedIn" cornerStyle="large" buttonSize="large">
                                 <backgroundConfiguration key="background">
                                     <color key="backgroundColor" red="0.02414261193001491" green="0.14054128064141502" blue="0.28698305739569907" alpha="0.84466384698410613" colorSpace="custom" customColorSpace="sRGB"/>
                                 </backgroundConfiguration>
@@ -58,7 +59,7 @@
                             <rect key="contentStretch" x="0.5" y="0.59999999999999998" width="1" height="1"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Portofolio 2" cornerStyle="large" buttonSize="large">
+                            <buttonConfiguration key="configuration" style="plain" title="GitHub" cornerStyle="large" buttonSize="large">
                                 <backgroundConfiguration key="background">
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84466384699999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 </backgroundConfiguration>
@@ -82,4 +83,3 @@
         </view>
     </objects>
 </document>
-
