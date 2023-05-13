@@ -1,9 +1,3 @@
-//
-//  CurriculumVitaeViewController.swift
-//  TokopediaDetailProduct
-//
-//  Created by TeravinMac on 09/05/23.
-//
 
 import UIKit
 
@@ -11,6 +5,7 @@ class CurriculumVitaeViewController: UIViewController {
     @IBOutlet weak var containerContent: UIView!
     @IBOutlet weak var contacInformationStackView: UIStackView!
     @IBOutlet weak var workExperienceStackView: UIStackView!
+    @IBOutlet weak var educationSertificationStackView: UIStackView!
     
     private lazy var contacInformationView: ContacInformationView = {
         var view = ContacInformationView()
@@ -25,6 +20,12 @@ class CurriculumVitaeViewController: UIViewController {
         return view
     }()
     
+   private lazy var educationSertificationView: EducationSertificationView = {
+        var view = EducationSertificationView()
+        view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,10 @@ class CurriculumVitaeViewController: UIViewController {
         workExperienceStackView.isUserInteractionEnabled = true
         let workExperienceStackGesture = UITapGestureRecognizer(target: self, action: #selector(openWorkExperience))
         workExperienceStackView.addGestureRecognizer(workExperienceStackGesture)
+        
+        educationSertificationStackView.isUserInteractionEnabled = true
+        let educationSertificationStackGesture = UITapGestureRecognizer(target: self, action: #selector(openEducationSertification))
+        educationSertificationStackView.addGestureRecognizer(educationSertificationStackGesture)
     }
     
     private func subViews() {
@@ -63,17 +68,33 @@ class CurriculumVitaeViewController: UIViewController {
             workExperienceView.topAnchor.constraint(equalTo: containerContent.topAnchor),
             workExperienceView.leadingAnchor.constraint(equalTo: containerContent.leadingAnchor, constant: 16),
             workExperienceView.trailingAnchor.constraint(equalTo: containerContent.trailingAnchor, constant: -16),
-            workExperienceView.bottomAnchor.constraint(equalTo: containerContent.bottomAnchor, constant: 0),
+            workExperienceView.bottomAnchor.constraint(lessThanOrEqualTo: containerContent.bottomAnchor, constant: 0),
+        ])
+        
+        containerContent.addSubview(educationSertificationView)
+        NSLayoutConstraint.activate([
+            educationSertificationView.topAnchor.constraint(equalTo: containerContent.topAnchor),
+            educationSertificationView.leadingAnchor.constraint(equalTo: containerContent.leadingAnchor, constant: 16),
+            educationSertificationView.trailingAnchor.constraint(equalTo: containerContent.trailingAnchor, constant: -16),
+            educationSertificationView.bottomAnchor.constraint(lessThanOrEqualTo: containerContent.bottomAnchor, constant: 0),
         ])
     }
     
     @objc private func openWorkExperience() {
         contacInformationView.isHidden = true
         workExperienceView.isHidden = false
+        educationSertificationView.isHidden = true
     }
     
     @objc private func openContacInformation() {
         contacInformationView.isHidden = false
+        workExperienceView.isHidden = true
+        educationSertificationView.isHidden = true
+    }
+    
+    @objc private func openEducationSertification() {
+        educationSertificationView.isHidden = false
+        contacInformationView.isHidden = true
         workExperienceView.isHidden = true
     }
     

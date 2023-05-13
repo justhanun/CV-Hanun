@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D70FB092A0BC43D00335E74 /* EducationSertificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D70FB082A0BC43D00335E74 /* EducationSertificationView.xib */; };
+		8D70FB0B2A0BC47800335E74 /* EducationSertificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70FB0A2A0BC47800335E74 /* EducationSertificationView.swift */; };
 		8DB5EFA82A0B435F001560C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFA72A0B435F001560C1 /* Assets.xcassets */; };
 		8DB5EFAC2A0B435F001560C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFAB2A0B435F001560C1 /* Preview Assets.xcassets */; };
 		8DB5EFB42A0B4688001560C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5EFB32A0B4688001560C1 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D70FB082A0BC43D00335E74 /* EducationSertificationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EducationSertificationView.xib; sourceTree = "<group>"; };
+		8D70FB0A2A0BC47800335E74 /* EducationSertificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationSertificationView.swift; sourceTree = "<group>"; };
 		8DB5EFA02A0B435C001560C1 /* CV Hanun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CV Hanun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB5EFA72A0B435F001560C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DB5EFA92A0B435F001560C1 /* CV_Hanun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CV_Hanun.entitlements; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		8D70FB052A0B636200335E74 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D70FB072A0BC3E400335E74 /* Education & Sertification */,
 				8D70FB042A0B635F00335E74 /* Contact Information */,
 				8D70FB032A0B635D00335E74 /* Work Experience */,
 			);
@@ -112,6 +117,15 @@
 				8D70FB012A0B635800335E74 /* Home */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		8D70FB072A0BC3E400335E74 /* Education & Sertification */ = {
+			isa = PBXGroup;
+			children = (
+				8D70FB082A0BC43D00335E74 /* EducationSertificationView.xib */,
+				8D70FB0A2A0BC47800335E74 /* EducationSertificationView.swift */,
+			);
+			path = "Education & Sertification";
 			sourceTree = "<group>";
 		};
 		8DB5EF972A0B435C001560C1 = {
@@ -215,6 +229,7 @@
 				8DB5EFC22A0B48E2001560C1 /* ContacInformationView.xib in Resources */,
 				8DB5EFBA2A0B46F6001560C1 /* HomeViewController.xib in Resources */,
 				8DB5EFBE2A0B487E001560C1 /* CurriculumVitaeViewController.xib in Resources */,
+				8D70FB092A0BC43D00335E74 /* EducationSertificationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D70FB0B2A0BC47800335E74 /* EducationSertificationView.swift in Sources */,
 				8DB5EFB42A0B4688001560C1 /* AppDelegate.swift in Sources */,
 				8DB5EFBD2A0B487E001560C1 /* CurriculumVitaeViewController.swift in Sources */,
 				8DB5EFC02A0B48D1001560C1 /* ContacInformationView.swift in Sources */,
