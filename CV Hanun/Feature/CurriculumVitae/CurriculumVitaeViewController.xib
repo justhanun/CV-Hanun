@@ -12,6 +12,7 @@
                 <outlet property="contacInformationStackView" destination="CDv-lK-YAj" id="lL2-bV-Rub"/>
                 <outlet property="containerContent" destination="PkH-4A-Wbe" id="Nkd-W6-BmK"/>
                 <outlet property="educationSertificationStackView" destination="FIk-PQ-IQL" id="aNU-7e-yxY"/>
+                <outlet property="skillInterestStackView" destination="xl1-Sx-TOH" id="wCM-zy-UHn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="workExperienceStackView" destination="Q9L-pf-LPD" id="MQs-wy-4qo"/>
             </connections>

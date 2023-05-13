@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D5BC6F22A0F41DA0090D3E9 /* SkillInterestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5BC6F12A0F41DA0090D3E9 /* SkillInterestView.xib */; };
+		8D5BC6F42A0F420E0090D3E9 /* SkillInterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BC6F32A0F420E0090D3E9 /* SkillInterestView.swift */; };
 		8D70FB092A0BC43D00335E74 /* EducationSertificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D70FB082A0BC43D00335E74 /* EducationSertificationView.xib */; };
 		8D70FB0B2A0BC47800335E74 /* EducationSertificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70FB0A2A0BC47800335E74 /* EducationSertificationView.swift */; };
 		8DB5EFA82A0B435F001560C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFA72A0B435F001560C1 /* Assets.xcassets */; };
@@ -21,9 +23,13 @@
 		8DB5EFC22A0B48E2001560C1 /* ContacInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFC12A0B48E2001560C1 /* ContacInformationView.xib */; };
 		8DB5EFC42A0B4B5F001560C1 /* WorkExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5EFC32A0B4B5F001560C1 /* WorkExperienceView.swift */; };
 		8DB5EFC62A0B4B72001560C1 /* WorkExperienceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB5EFC52A0B4B72001560C1 /* WorkExperienceView.xib */; };
+		8DB951FE2A0F6358003C1240 /* LauchVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB951FD2A0F6358003C1240 /* LauchVideoViewController.swift */; };
+		8DB952032A0F6CBE003C1240 /* VideoLaunch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8DB952022A0F6CBE003C1240 /* VideoLaunch.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D5BC6F12A0F41DA0090D3E9 /* SkillInterestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillInterestView.xib; sourceTree = "<group>"; };
+		8D5BC6F32A0F420E0090D3E9 /* SkillInterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillInterestView.swift; sourceTree = "<group>"; };
 		8D70FB082A0BC43D00335E74 /* EducationSertificationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EducationSertificationView.xib; sourceTree = "<group>"; };
 		8D70FB0A2A0BC47800335E74 /* EducationSertificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationSertificationView.swift; sourceTree = "<group>"; };
 		8DB5EFA02A0B435C001560C1 /* CV Hanun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CV Hanun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +47,8 @@
 		8DB5EFC12A0B48E2001560C1 /* ContacInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContacInformationView.xib; sourceTree = "<group>"; };
 		8DB5EFC32A0B4B5F001560C1 /* WorkExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceView.swift; sourceTree = "<group>"; };
 		8DB5EFC52A0B4B72001560C1 /* WorkExperienceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkExperienceView.xib; sourceTree = "<group>"; };
+		8DB951FD2A0F6358003C1240 /* LauchVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchVideoViewController.swift; sourceTree = "<group>"; };
+		8DB952022A0F6CBE003C1240 /* VideoLaunch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = VideoLaunch.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D5BC6F02A0F41760090D3E9 /* Skill & Interest */ = {
+			isa = PBXGroup;
+			children = (
+				8D5BC6F12A0F41DA0090D3E9 /* SkillInterestView.xib */,
+				8D5BC6F32A0F420E0090D3E9 /* SkillInterestView.swift */,
+			);
+			path = "Skill & Interest";
+			sourceTree = "<group>";
+		};
 		8D70FB002A0B635600335E74 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +120,7 @@
 		8D70FB052A0B636200335E74 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D5BC6F02A0F41760090D3E9 /* Skill & Interest */,
 				8D70FB072A0BC3E400335E74 /* Education & Sertification */,
 				8D70FB042A0B635F00335E74 /* Contact Information */,
 				8D70FB032A0B635D00335E74 /* Work Experience */,
@@ -113,6 +131,7 @@
 		8D70FB062A0B63C400335E74 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				8DB951FF2A0F635F003C1240 /* Launch Video */,
 				8D70FB022A0B635B00335E74 /* CurriculumVitae */,
 				8D70FB012A0B635800335E74 /* Home */,
 			);
@@ -163,6 +182,15 @@
 				8DB5EFAB2A0B435F001560C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DB951FF2A0F635F003C1240 /* Launch Video */ = {
+			isa = PBXGroup;
+			children = (
+				8DB952022A0F6CBE003C1240 /* VideoLaunch.mp4 */,
+				8DB951FD2A0F6358003C1240 /* LauchVideoViewController.swift */,
+			);
+			path = "Launch Video";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,10 +253,12 @@
 			files = (
 				8DB5EFAC2A0B435F001560C1 /* Preview Assets.xcassets in Resources */,
 				8DB5EFC62A0B4B72001560C1 /* WorkExperienceView.xib in Resources */,
+				8DB952032A0F6CBE003C1240 /* VideoLaunch.mp4 in Resources */,
 				8DB5EFA82A0B435F001560C1 /* Assets.xcassets in Resources */,
 				8DB5EFC22A0B48E2001560C1 /* ContacInformationView.xib in Resources */,
 				8DB5EFBA2A0B46F6001560C1 /* HomeViewController.xib in Resources */,
 				8DB5EFBE2A0B487E001560C1 /* CurriculumVitaeViewController.xib in Resources */,
+				8D5BC6F22A0F41DA0090D3E9 /* SkillInterestView.xib in Resources */,
 				8D70FB092A0BC43D00335E74 /* EducationSertificationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB951FE2A0F6358003C1240 /* LauchVideoViewController.swift in Sources */,
 				8D70FB0B2A0BC47800335E74 /* EducationSertificationView.swift in Sources */,
 				8DB5EFB42A0B4688001560C1 /* AppDelegate.swift in Sources */,
+				8D5BC6F42A0F420E0090D3E9 /* SkillInterestView.swift in Sources */,
 				8DB5EFBD2A0B487E001560C1 /* CurriculumVitaeViewController.swift in Sources */,
 				8DB5EFC02A0B48D1001560C1 /* ContacInformationView.swift in Sources */,
 				8DB5EFC42A0B4B5F001560C1 /* WorkExperienceView.swift in Sources */,

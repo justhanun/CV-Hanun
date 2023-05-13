@@ -6,6 +6,7 @@ class CurriculumVitaeViewController: UIViewController {
     @IBOutlet weak var contacInformationStackView: UIStackView!
     @IBOutlet weak var workExperienceStackView: UIStackView!
     @IBOutlet weak var educationSertificationStackView: UIStackView!
+    @IBOutlet weak var skillInterestStackView: UIStackView!
     
     private lazy var contacInformationView: ContacInformationView = {
         var view = ContacInformationView()
@@ -26,6 +27,13 @@ class CurriculumVitaeViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    private lazy var skillInterestView: SkillInterestView = {
+         var view = SkillInterestView()
+         view.isHidden = true
+         view.translatesAutoresizingMaskIntoConstraints = false
+         return view
+     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +60,10 @@ class CurriculumVitaeViewController: UIViewController {
         educationSertificationStackView.isUserInteractionEnabled = true
         let educationSertificationStackGesture = UITapGestureRecognizer(target: self, action: #selector(openEducationSertification))
         educationSertificationStackView.addGestureRecognizer(educationSertificationStackGesture)
+        
+        skillInterestStackView.isUserInteractionEnabled = true
+        let skillInterestStackGesture = UITapGestureRecognizer(target: self, action: #selector(openSkillInterest))
+        skillInterestStackView.addGestureRecognizer(skillInterestStackGesture)
     }
     
     private func subViews() {
@@ -78,24 +90,42 @@ class CurriculumVitaeViewController: UIViewController {
             educationSertificationView.trailingAnchor.constraint(equalTo: containerContent.trailingAnchor, constant: -16),
             educationSertificationView.bottomAnchor.constraint(lessThanOrEqualTo: containerContent.bottomAnchor, constant: 0),
         ])
+        
+        containerContent.addSubview(skillInterestView)
+        NSLayoutConstraint.activate([
+            skillInterestView.topAnchor.constraint(equalTo: containerContent.topAnchor),
+            skillInterestView.leadingAnchor.constraint(equalTo: containerContent.leadingAnchor, constant: 16),
+            skillInterestView.trailingAnchor.constraint(equalTo: containerContent.trailingAnchor, constant: -16),
+            skillInterestView.bottomAnchor.constraint(lessThanOrEqualTo: containerContent.bottomAnchor, constant: 0),
+        ])
     }
     
     @objc private func openWorkExperience() {
         contacInformationView.isHidden = true
         workExperienceView.isHidden = false
         educationSertificationView.isHidden = true
+        skillInterestView.isHidden = true
     }
     
     @objc private func openContacInformation() {
         contacInformationView.isHidden = false
         workExperienceView.isHidden = true
         educationSertificationView.isHidden = true
+        skillInterestView.isHidden = true
     }
     
     @objc private func openEducationSertification() {
         educationSertificationView.isHidden = false
         contacInformationView.isHidden = true
         workExperienceView.isHidden = true
+        skillInterestView.isHidden = true
+    }
+    
+    @objc private func openSkillInterest() {
+        skillInterestView.isHidden = false
+        contacInformationView.isHidden = true
+        workExperienceView.isHidden = true
+        educationSertificationView.isHidden = true
     }
     
     func hexStringToUIColor (hex:String) -> UIColor {
